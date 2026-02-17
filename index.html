@@ -1,14 +1,292 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>MBTI × 한국 캐릭터 — 16가지 성격 유형</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <header>
+    <h1>MBTI × 귀여운 한국 캐릭터</h1>
+    <p class="subtitle">16가지 성격 유형을 사랑스러운 한국 캐릭터로 알아보세요!</p>
+    <nav class="filter-bar">
+      <button class="filter-btn active" data-group="all">전체</button>
+      <button class="filter-btn" data-group="analyst">분석가 🧠</button>
+      <button class="filter-btn" data-group="diplomat">외교관 💚</button>
+      <button class="filter-btn" data-group="sentinel">관리자 🛡️</button>
+      <button class="filter-btn" data-group="explorer">탐험가 🎨</button>
+    </nav>
+  </header>
+
+  <main class="grid" id="mbti-grid">
+
+    <!-- ===== 분석가 (Analysts) ===== -->
+    <article class="card" data-group="analyst" data-mbti="INTJ">
+      <div class="card-emoji">🦁</div>
+      <div class="card-badge">INTJ</div>
+      <h2>라이언 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">전략가 — The Architect</p>
+      <ul class="traits">
+        <li>조용하지만 강한 리더십</li>
+        <li>완벽주의적 계획가</li>
+        <li>독립적이고 자기 확신이 강함</li>
+        <li>감정 표현이 서툴지만 속은 따뜻함</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">독립적</span><span class="tag">전략적</span><span class="tag">신뢰감</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="analyst" data-mbti="INTP">
+      <div class="card-emoji">🦊</div>
+      <div class="card-badge">INTP</div>
+      <h2>에디 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">논리술사 — The Logician</p>
+      <ul class="traits">
+        <li>발명과 실험을 사랑하는 천재형</li>
+        <li>호기심이 끝없이 많음</li>
+        <li>논리적이지만 가끔 엉뚱함</li>
+        <li>혼자만의 작업실에서 몰입</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">발명가</span><span class="tag">호기심</span><span class="tag">논리적</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="analyst" data-mbti="ENTJ">
+      <div class="card-emoji">😎</div>
+      <div class="card-badge">ENTJ</div>
+      <h2>네오 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">통솔자 — The Commander</p>
+      <ul class="traits">
+        <li>자신감 넘치는 패셔니스타</li>
+        <li>목표를 향해 거침없이 돌진</li>
+        <li>리더십과 카리스마가 강함</li>
+        <li>완벽한 결과를 추구</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">카리스마</span><span class="tag">리더십</span><span class="tag">자신감</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="analyst" data-mbti="ENTP">
+      <div class="card-emoji">🐊</div>
+      <div class="card-badge">ENTP</div>
+      <h2>크롱 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">변론가 — The Debater</p>
+      <ul class="traits">
+        <li>장난기 가득하고 예측 불가</li>
+        <li>규칙보다 창의적 해결책 선호</li>
+        <li>논쟁을 즐기며 재치있음</li>
+        <li>새로운 시도를 두려워하지 않음</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">장난꾸러기</span><span class="tag">창의적</span><span class="tag">도전적</span>
+      </div>
+    </article>
+
+    <!-- ===== 외교관 (Diplomats) ===== -->
+    <article class="card" data-group="diplomat" data-mbti="INFJ">
+      <div class="card-emoji">🐻</div>
+      <div class="card-badge">INFJ</div>
+      <h2>브라운 <span class="origin">(라인프렌즈)</span></h2>
+      <p class="nickname">옹호자 — The Advocate</p>
+      <ul class="traits">
+        <li>말수는 적지만 속이 깊음</li>
+        <li>소중한 사람을 묵묵히 지킴</li>
+        <li>강한 신념과 이상을 가짐</li>
+        <li>겉은 무뚝뚝, 속은 다정함</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">과묵</span><span class="tag">신념</span><span class="tag">다정</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="diplomat" data-mbti="INFP">
+      <div class="card-emoji">🐰</div>
+      <div class="card-badge">INFP</div>
+      <h2>코니 <span class="origin">(라인프렌즈)</span></h2>
+      <p class="nickname">중재자 — The Mediator</p>
+      <ul class="traits">
+        <li>감성이 풍부하고 이상적</li>
+        <li>사랑에 진심인 로맨티스트</li>
+        <li>자기만의 세계가 확실함</li>
+        <li>공감 능력이 뛰어남</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">감성적</span><span class="tag">로맨틱</span><span class="tag">공감</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="diplomat" data-mbti="ENFJ">
+      <div class="card-emoji">🐧</div>
+      <div class="card-badge">ENFJ</div>
+      <h2>뽀로로 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">선도자 — The Protagonist</p>
+      <ul class="traits">
+        <li>친구들의 중심에 서는 리더</li>
+        <li>모험을 이끌며 모두를 챙김</li>
+        <li>정의감이 강하고 열정적</li>
+        <li>함께하는 것을 가장 중요시</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">리더</span><span class="tag">열정</span><span class="tag">배려</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="diplomat" data-mbti="ENFP">
+      <div class="card-emoji">🍑</div>
+      <div class="card-badge">ENFP</div>
+      <h2>어피치 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">활동가 — The Campaigner</p>
+      <ul class="traits">
+        <li>에너지 넘치고 사랑스러움</li>
+        <li>자유로운 영혼의 소유자</li>
+        <li>사람들에게 긍정 에너지를 줌</li>
+        <li>감정 표현이 솔직하고 풍부</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">에너지</span><span class="tag">자유</span><span class="tag">긍정</span>
+      </div>
+    </article>
+
+    <!-- ===== 관리자 (Sentinels) ===== -->
+    <article class="card" data-group="sentinel" data-mbti="ISTJ">
+      <div class="card-emoji">🐻‍❄️</div>
+      <div class="card-badge">ISTJ</div>
+      <h2>포비 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">현실주의자 — The Logistician</p>
+      <ul class="traits">
+        <li>성실하고 책임감이 강함</li>
+        <li>규칙과 질서를 중요시</li>
+        <li>묵묵히 맡은 일을 해냄</li>
+        <li>신뢰할 수 있는 든든한 존재</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">성실</span><span class="tag">책임감</span><span class="tag">신뢰</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="sentinel" data-mbti="ISFJ">
+      <div class="card-emoji">🦫</div>
+      <div class="card-badge">ISFJ</div>
+      <h2>루피 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">수호자 — The Defender</p>
+      <ul class="traits">
+        <li>따뜻하고 다정한 보살핌</li>
+        <li>친구들을 위해 요리하고 챙김</li>
+        <li>조용하지만 헌신적</li>
+        <li>안정과 조화를 추구</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">다정</span><span class="tag">헌신</span><span class="tag">보살핌</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="sentinel" data-mbti="ESTJ">
+      <div class="card-emoji">🐶</div>
+      <div class="card-badge">ESTJ</div>
+      <h2>프로도 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">경영자 — The Executive</p>
+      <ul class="traits">
+        <li>체계적이고 원칙을 중시</li>
+        <li>질서 정연한 환경을 만듦</li>
+        <li>책임감 있게 일을 관리</li>
+        <li>현실적이고 실용적인 판단</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">체계적</span><span class="tag">원칙</span><span class="tag">실용적</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="sentinel" data-mbti="ESFJ">
+      <div class="card-emoji">🐧</div>
+      <div class="card-badge">ESFJ</div>
+      <h2>패티 <span class="origin">(뽀로로)</span></h2>
+      <p class="nickname">집정관 — The Consul</p>
+      <ul class="traits">
+        <li>사교적이고 친구를 잘 챙김</li>
+        <li>조화로운 관계를 만들어감</li>
+        <li>다른 사람의 기분에 민감</li>
+        <li>따뜻한 분위기를 만드는 사람</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">사교적</span><span class="tag">조화</span><span class="tag">따뜻함</span>
+      </div>
+    </article>
+
+    <!-- ===== 탐험가 (Explorers) ===== -->
+    <article class="card" data-group="explorer" data-mbti="ISTP">
+      <div class="card-emoji">🐉</div>
+      <div class="card-badge">ISTP</div>
+      <h2>둘리 <span class="origin">(아기공룡 둘리)</span></h2>
+      <p class="nickname">장인 — The Virtuoso</p>
+      <ul class="traits">
+        <li>독립적이고 자유로운 성격</li>
+        <li>상황 대처 능력이 뛰어남</li>
+        <li>호기심으로 이것저것 시도</li>
+        <li>쿨하고 감정에 휘둘리지 않음</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">독립적</span><span class="tag">쿨함</span><span class="tag">적응력</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="explorer" data-mbti="ISFP">
+      <div class="card-emoji">🐥</div>
+      <div class="card-badge">ISFP</div>
+      <h2>샐리 <span class="origin">(라인프렌즈)</span></h2>
+      <p class="nickname">모험가 — The Adventurer</p>
+      <ul class="traits">
+        <li>겉은 순수하지만 내면이 강함</li>
+        <li>자기만의 감성과 취향이 확실</li>
+        <li>예술적 감각이 뛰어남</li>
+        <li>조용히 자기 길을 걸어감</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">감성</span><span class="tag">예술적</span><span class="tag">순수</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="explorer" data-mbti="ESTP">
+      <div class="card-emoji">🦖</div>
+      <div class="card-badge">ESTP</div>
+      <h2>튜브 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">사업가 — The Entrepreneur</p>
+      <ul class="traits">
+        <li>겁이 많지만 용감하게 도전</li>
+        <li>순간의 즐거움을 추구</li>
+        <li>행동이 빠르고 실행력 강함</li>
+        <li>현실 감각이 뛰어남</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">도전</span><span class="tag">실행력</span><span class="tag">현실적</span>
+      </div>
+    </article>
+
+    <article class="card" data-group="explorer" data-mbti="ESFP">
+      <div class="card-emoji">🐰</div>
+      <div class="card-badge">ESFP</div>
+      <h2>무지 <span class="origin">(카카오프렌즈)</span></h2>
+      <p class="nickname">연예인 — The Entertainer</p>
+      <ul class="traits">
+        <li>분위기 메이커이자 인싸</li>
+        <li>즐거운 것을 찾아 다님</li>
+        <li>표현력이 풍부하고 유쾌함</li>
+        <li>사람들과 함께하는 걸 좋아함</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">유쾌</span><span class="tag">인싸</span><span class="tag">표현력</span>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>MBTI × 한국 캐릭터 — 성격 유형별 캐릭터 매칭</p>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
