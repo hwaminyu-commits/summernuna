@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Filter buttons
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.card');
 
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (group === 'all' || card.dataset.group === group) {
           card.classList.remove('hidden');
           card.style.animation = 'none';
-          card.offsetHeight; // trigger reflow
+          card.offsetHeight;
           card.style.animation = '';
         } else {
           card.classList.add('hidden');
@@ -21,4 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
 });

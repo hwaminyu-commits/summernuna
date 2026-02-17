@@ -3,25 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBTI × 캐릭터 — 16가지 성격 유형</title>
+  <title>MBTI 성격 유형 × 한국 캐릭터 — 16가지 MBTI 유형별 특징과 캐릭터 매칭</title>
+  <meta name="description" content="16가지 MBTI 성격 유형을 카카오프렌즈, 라인프렌즈, 뽀로로 등 사랑스러운 한국 캐릭터로 쉽고 재미있게 알아보세요. 각 유형별 상세한 성격 특징, 연애 스타일, 직업 적성까지 한눈에!">
+  <meta name="keywords" content="MBTI, 성격유형, 카카오프렌즈, 라인프렌즈, 뽀로로, INTJ, INFP, ENFP, 성격테스트, 한국캐릭터, MBTI 특징, MBTI 궁합">
+  <meta name="author" content="MBTI × 한국 캐릭터">
+  <meta property="og:title" content="MBTI 성격 유형 × 한국 캐릭터 — 16가지 유형 완벽 가이드">
+  <meta property="og:description" content="카카오프렌즈, 라인프렌즈, 뽀로로 캐릭터로 알아보는 16가지 MBTI 성격 유형 상세 가이드">
+  <meta property="og:type" content="website">
   <meta name="google-adsense-account" content="ca-pub-4109353075753945">
   <link href='/style.css' rel='stylesheet'>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4109353075753945"
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="top-nav">
+    <a href="#" class="nav-logo">MBTI × 캐릭터</a>
+    <ul class="nav-links">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#mbti-grid">유형 보기</a></li>
+      <li><a href="#contact">제휴문의</a></li>
+      <li><a href="privacy.html">개인정보처리방침</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header id="hero">
     <h1>MBTI × 귀여운 한국 캐릭터</h1>
-    <p class="subtitle">16가지 성격 유형을 사랑스러운 한국 캐릭터로 알아보세요!</p>
+    <p class="subtitle">16가지 성격 유형을 사랑스러운 한국 캐릭터로 쉽고 재미있게 알아보세요!</p>
+    <p class="hero-desc">MBTI(Myers-Briggs Type Indicator)는 사람들의 성격을 16가지 유형으로 분류하는 성격 유형 검사입니다. 각 유형의 특징을 우리에게 친숙한 카카오프렌즈, 라인프렌즈, 뽀로로 등 한국 대표 캐릭터와 매칭하여 누구나 쉽게 이해할 수 있도록 정리했습니다.</p>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section class="about-section" id="about">
+    <h2 class="section-title">MBTI란 무엇인가요?</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>🔍 MBTI의 4가지 지표</h3>
+        <p>MBTI는 4가지 선호 지표의 조합으로 구성됩니다. <strong>에너지 방향</strong>(외향 E / 내향 I), <strong>인식 기능</strong>(감각 S / 직관 N), <strong>판단 기능</strong>(사고 T / 감정 F), <strong>생활 양식</strong>(판단 J / 인식 P)으로 나뉘어 총 16가지 성격 유형이 만들어집니다.</p>
+      </div>
+      <div class="about-card">
+        <h3>🎯 왜 한국 캐릭터일까요?</h3>
+        <p>카카오프렌즈의 라이언, 어피치부터 뽀로로, 라인프렌즈의 브라운까지 — 한국에서 태어나 전 세계적으로 사랑받는 캐릭터들은 각각 뚜렷한 개성을 가지고 있습니다. 이 캐릭터들의 성격과 MBTI 유형을 매칭하면 복잡한 성격 이론을 친숙하고 재미있게 이해할 수 있습니다.</p>
+      </div>
+      <div class="about-card">
+        <h3>📖 이 사이트 활용법</h3>
+        <p>아래 필터 버튼으로 <strong>분석가·외교관·관리자·탐험가</strong> 4개 그룹별로 살펴보세요. 각 카드에는 해당 유형의 핵심 성격, 강점과 약점, 연애 스타일, 추천 직업까지 상세하게 정리되어 있습니다. 자신의 MBTI 유형을 찾아 캐릭터와 비교해 보는 재미를 느껴보세요!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Filter Bar ===== -->
+  <section class="filter-section">
     <nav class="filter-bar">
-      <button class="filter-btn active" data-group="all">전체</button>
+      <button class="filter-btn active" data-group="all">전체 (16)</button>
       <button class="filter-btn" data-group="analyst">분석가 🧠</button>
       <button class="filter-btn" data-group="diplomat">외교관 💚</button>
       <button class="filter-btn" data-group="sentinel">관리자 🛡️</button>
       <button class="filter-btn" data-group="explorer">탐험가 🎨</button>
     </nav>
-  </header>
+  </section>
 
+  <!-- ===== MBTI Grid ===== -->
   <main class="grid" id="mbti-grid">
 
     <!-- ===== 분석가 (Analysts) ===== -->
@@ -30,12 +75,23 @@
       <div class="card-badge">INTJ</div>
       <h2>라이언 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">전략가 — The Architect</p>
-      <ul class="traits">
-        <li>조용하지만 강한 리더십</li>
-        <li>완벽주의적 계획가</li>
-        <li>독립적이고 자기 확신이 강함</li>
-        <li>감정 표현이 서툴지만 속은 따뜻함</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈의 리더 라이언은 겉으로는 조용하지만 내면에 강한 신념과 전략적 사고를 가진 INTJ 유형과 완벽하게 어울립니다. 갈기 없는 수사자라는 독특한 배경처럼, INTJ는 남들과 다른 자신만의 길을 걸어갑니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>조용하지만 강한 리더십으로 주변을 이끔</li>
+          <li>완벽주의적 성향의 장기 계획가</li>
+          <li>독립적이고 자기 확신이 강함</li>
+          <li>감정 표현이 서툴지만 속은 따뜻함</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 뛰어난 분석력, 전략적 사고, 높은 자기 기준, 독립성<br>
+        <strong>약점:</strong> 지나친 완벽주의, 감정 표현 부족, 타인에게 냉정해 보일 수 있음</p>
+        <h4>연애 스타일</h4>
+        <p>겉으로는 무심해 보이지만 한번 마음을 주면 묵묵히 헌신합니다. 지적인 대화를 나눌 수 있는 파트너를 선호합니다.</p>
+        <h4>추천 직업</h4>
+        <p>전략 컨설턴트, 데이터 과학자, 연구원, 건축가, 투자 분석가</p>
+      </div>
       <div class="tag-row">
         <span class="tag">독립적</span><span class="tag">전략적</span><span class="tag">신뢰감</span>
       </div>
@@ -46,12 +102,23 @@
       <div class="card-badge">INTP</div>
       <h2>에디 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">논리술사 — The Logician</p>
-      <ul class="traits">
-        <li>발명과 실험을 사랑하는 천재형</li>
-        <li>호기심이 끝없이 많음</li>
-        <li>논리적이지만 가끔 엉뚱함</li>
-        <li>혼자만의 작업실에서 몰입</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">뽀로로의 천재 발명가 에디는 끊임없이 새로운 기계를 만들고 실험하는 INTP의 전형적인 모습입니다. 자신만의 작업실에서 몰두하며, 실패해도 포기하지 않는 탐구 정신이 바로 INTP의 매력입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>발명과 실험을 사랑하는 천재형</li>
+          <li>호기심이 끝없이 많고 지적 탐구를 즐김</li>
+          <li>논리적이지만 가끔 엉뚱한 발상</li>
+          <li>혼자만의 작업실에서 깊이 몰입</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 창의적 문제 해결, 논리적 분석력, 지적 호기심, 객관성<br>
+        <strong>약점:</strong> 사회성 부족, 결정 장애, 현실적 실행력 부족, 감정 둔감</p>
+        <h4>연애 스타일</h4>
+        <p>관심사를 함께 나눌 수 있는 지적인 관계를 추구합니다. 표현은 서툴지만 상대에 대한 깊은 이해를 보여줍니다.</p>
+        <h4>추천 직업</h4>
+        <p>소프트웨어 개발자, 물리학자, 수학자, 게임 디자이너, 철학 교수</p>
+      </div>
       <div class="tag-row">
         <span class="tag">발명가</span><span class="tag">호기심</span><span class="tag">논리적</span>
       </div>
@@ -62,12 +129,23 @@
       <div class="card-badge">ENTJ</div>
       <h2>네오 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">통솔자 — The Commander</p>
-      <ul class="traits">
-        <li>자신감 넘치는 패셔니스타</li>
-        <li>목표를 향해 거침없이 돌진</li>
-        <li>리더십과 카리스마가 강함</li>
-        <li>완벽한 결과를 추구</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈의 패셔니스타 네오는 자신감 넘치고 트렌드를 이끌어가는 ENTJ와 닮았습니다. 짧은 꼬리를 긴 꼬리로 바꿔 쓰는 당당함처럼, ENTJ는 자신의 약점마저 매력으로 바꾸는 능력자입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>자신감 넘치는 타고난 리더</li>
+          <li>목표를 향해 거침없이 돌진</li>
+          <li>리더십과 카리스마가 강함</li>
+          <li>완벽한 결과를 위해 끝까지 추진</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 탁월한 리더십, 효율적 의사결정, 높은 추진력, 자신감<br>
+        <strong>약점:</strong> 독단적 경향, 감정 무시, 지나친 통제욕, 참을성 부족</p>
+        <h4>연애 스타일</h4>
+        <p>연애에서도 주도적이며 계획적입니다. 함께 성장할 수 있는 당당한 파트너를 원합니다.</p>
+        <h4>추천 직업</h4>
+        <p>CEO, 경영 컨설턴트, 변호사, 정치인, 프로젝트 매니저</p>
+      </div>
       <div class="tag-row">
         <span class="tag">카리스마</span><span class="tag">리더십</span><span class="tag">자신감</span>
       </div>
@@ -78,12 +156,23 @@
       <div class="card-badge">ENTP</div>
       <h2>크롱 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">변론가 — The Debater</p>
-      <ul class="traits">
-        <li>장난기 가득하고 예측 불가</li>
-        <li>규칙보다 창의적 해결책 선호</li>
-        <li>논쟁을 즐기며 재치있음</li>
-        <li>새로운 시도를 두려워하지 않음</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">뽀로로의 장난꾸러기 동생 크롱은 예측 불가능하고 창의적인 ENTP의 대표 캐릭터입니다. 규칙을 따르기보다 자기만의 방식을 찾고, 엉뚱한 행동으로 주변을 웃게 만드는 모습이 ENTP 그 자체입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>장난기 가득하고 예측 불가능한 행동</li>
+          <li>규칙보다 창의적 해결책을 선호</li>
+          <li>논쟁을 즐기며 재치 있는 대화가</li>
+          <li>새로운 시도를 두려워하지 않는 모험가</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 창의력, 빠른 적응력, 논리적 토론 능력, 다재다능함<br>
+        <strong>약점:</strong> 끈기 부족, 규칙 무시, 논쟁적 성향, 집중력 부족</p>
+        <h4>연애 스타일</h4>
+        <p>지루함을 싫어해서 항상 새로운 데이트를 기획합니다. 유머와 지적 자극이 넘치는 관계를 추구합니다.</p>
+        <h4>추천 직업</h4>
+        <p>기업가, 마케팅 디렉터, 방송인, 변리사, 크리에이티브 디렉터</p>
+      </div>
       <div class="tag-row">
         <span class="tag">장난꾸러기</span><span class="tag">창의적</span><span class="tag">도전적</span>
       </div>
@@ -106,12 +195,23 @@
       <div class="card-badge">INFJ</div>
       <h2>브라운 <span class="origin">(라인프렌즈)</span></h2>
       <p class="nickname">옹호자 — The Advocate</p>
-      <ul class="traits">
-        <li>말수는 적지만 속이 깊음</li>
-        <li>소중한 사람을 묵묵히 지킴</li>
-        <li>강한 신념과 이상을 가짐</li>
-        <li>겉은 무뚝뚝, 속은 다정함</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">라인프렌즈의 브라운은 표정이 거의 없고 과묵하지만, 코니를 지키기 위해 무엇이든 하는 깊은 내면의 소유자입니다. 가장 희귀한 MBTI 유형인 INFJ처럼, 겉으로 드러나지 않는 깊은 감정과 강한 신념을 간직하고 있습니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>말수는 적지만 속이 깊은 사색가</li>
+          <li>소중한 사람을 묵묵히 지키는 수호자</li>
+          <li>강한 신념과 이상주의적 가치관</li>
+          <li>겉은 무뚝뚝하지만 속은 한없이 다정</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 깊은 공감 능력, 강한 직관, 헌신적 태도, 도덕성<br>
+        <strong>약점:</strong> 번아웃 위험, 지나친 이상주의, 갈등 회피, 완벽주의</p>
+        <h4>연애 스타일</h4>
+        <p>깊고 의미 있는 관계를 추구합니다. 상대의 감정을 잘 읽고, 진심으로 사랑하지만 쉽게 마음을 열지 않습니다.</p>
+        <h4>추천 직업</h4>
+        <p>상담사, 작가, 심리학자, 사회복지사, UX 디자이너</p>
+      </div>
       <div class="tag-row">
         <span class="tag">과묵</span><span class="tag">신념</span><span class="tag">다정</span>
       </div>
@@ -122,12 +222,23 @@
       <div class="card-badge">INFP</div>
       <h2>코니 <span class="origin">(라인프렌즈)</span></h2>
       <p class="nickname">중재자 — The Mediator</p>
-      <ul class="traits">
-        <li>감성이 풍부하고 이상적</li>
-        <li>사랑에 진심인 로맨티스트</li>
-        <li>자기만의 세계가 확실함</li>
-        <li>공감 능력이 뛰어남</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">라인프렌즈의 코니는 감정 표현이 풍부하고 사랑에 진심인 로맨티스트입니다. 브라운을 향한 순수한 애정과 풍부한 감성은 자기만의 이상 세계를 가진 INFP의 모습 그대로입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>감성이 풍부하고 이상적인 세계관</li>
+          <li>사랑에 진심인 타고난 로맨티스트</li>
+          <li>자기만의 내면 세계가 확고함</li>
+          <li>타인의 감정에 깊이 공감하는 능력</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 풍부한 상상력, 깊은 공감 능력, 진정성, 창의성<br>
+        <strong>약점:</strong> 현실과 이상의 괴리, 결정 장애, 비판에 민감, 자기 비하</p>
+        <h4>연애 스타일</h4>
+        <p>동화 같은 사랑을 꿈꾸며, 감정적으로 깊이 연결되는 관계를 원합니다. 연인의 감정에 매우 민감하게 반응합니다.</p>
+        <h4>추천 직업</h4>
+        <p>작가, 일러스트레이터, 음악가, 상담사, 사회운동가</p>
+      </div>
       <div class="tag-row">
         <span class="tag">감성적</span><span class="tag">로맨틱</span><span class="tag">공감</span>
       </div>
@@ -138,12 +249,23 @@
       <div class="card-badge">ENFJ</div>
       <h2>뽀로로 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">선도자 — The Protagonist</p>
-      <ul class="traits">
-        <li>친구들의 중심에 서는 리더</li>
-        <li>모험을 이끌며 모두를 챙김</li>
-        <li>정의감이 강하고 열정적</li>
-        <li>함께하는 것을 가장 중요시</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">"뽀통령"이라 불리는 뽀로로는 대한민국 어린이들의 대통령답게 친구들을 이끌고 모험을 떠나는 ENFJ형 리더입니다. 때로는 실수하지만 항상 친구들을 챙기고, 모두를 위해 앞장서는 모습이 ENFJ의 따뜻한 리더십을 보여줍니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>친구들의 중심에 서는 따뜻한 리더</li>
+          <li>모험을 이끌며 모두를 세심하게 챙김</li>
+          <li>정의감이 강하고 열정적인 성격</li>
+          <li>함께하는 것을 가장 중요하게 여김</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 카리스마, 공감 능력, 의사소통 능력, 이타적 리더십<br>
+        <strong>약점:</strong> 지나친 이타심, 거절 못함, 자기 희생, 감정 과부하</p>
+        <h4>연애 스타일</h4>
+        <p>상대에게 헌신적이며 관계를 적극적으로 이끌어갑니다. 감정적 교류와 깊은 대화를 중요시합니다.</p>
+        <h4>추천 직업</h4>
+        <p>교사, HR 매니저, 코치, 외교관, 이벤트 기획자</p>
+      </div>
       <div class="tag-row">
         <span class="tag">리더</span><span class="tag">열정</span><span class="tag">배려</span>
       </div>
@@ -154,16 +276,38 @@
       <div class="card-badge">ENFP</div>
       <h2>어피치 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">활동가 — The Campaigner</p>
-      <ul class="traits">
-        <li>에너지 넘치고 사랑스러움</li>
-        <li>자유로운 영혼의 소유자</li>
-        <li>사람들에게 긍정 에너지를 줌</li>
-        <li>감정 표현이 솔직하고 풍부</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈에서 가장 사랑받는 캐릭터 어피치는 유전자 변이로 나무에서 탈출한 복숭아답게 자유로운 영혼의 ENFP입니다. 풍부한 감정 표현과 넘치는 에너지로 주변 사람들에게 행복을 전파합니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>에너지 넘치고 사랑스러운 분위기 메이커</li>
+          <li>자유로운 영혼으로 틀에 얽매이지 않음</li>
+          <li>사람들에게 긍정 에너지를 전파</li>
+          <li>감정 표현이 솔직하고 풍부함</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 열정적, 창의적, 사교적, 낙관적, 적응력<br>
+        <strong>약점:</strong> 집중력 부족, 감정 기복, 계획성 부족, 쉽게 지루해함</p>
+        <h4>연애 스타일</h4>
+        <p>설레는 연애를 좋아하며 감정에 솔직합니다. 새로운 경험을 함께할 수 있는 유쾌한 파트너를 원합니다.</p>
+        <h4>추천 직업</h4>
+        <p>콘텐츠 크리에이터, 배우, 마케터, 여행 작가, 스타트업 창업자</p>
+      </div>
       <div class="tag-row">
         <span class="tag">에너지</span><span class="tag">자유</span><span class="tag">긍정</span>
       </div>
     </article>
+
+    <!-- Ad: between Diplomats & Sentinels -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4109353075753945"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <!-- ===== 관리자 (Sentinels) ===== -->
     <article class="card" data-group="sentinel" data-mbti="ISTJ">
@@ -171,12 +315,23 @@
       <div class="card-badge">ISTJ</div>
       <h2>포비 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">현실주의자 — The Logistician</p>
-      <ul class="traits">
-        <li>성실하고 책임감이 강함</li>
-        <li>규칙과 질서를 중요시</li>
-        <li>묵묵히 맡은 일을 해냄</li>
-        <li>신뢰할 수 있는 든든한 존재</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">뽀로로 시리즈의 북극곰 포비는 친구들 중 가장 성실하고 책임감 있는 캐릭터입니다. 요리를 잘하고 집안일을 꼼꼼히 챙기는 모습은 규칙과 질서를 중시하는 ISTJ의 전형적인 특성입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>성실하고 책임감이 누구보다 강함</li>
+          <li>규칙과 질서를 철저히 지킴</li>
+          <li>묵묵히 맡은 일을 완수하는 실행력</li>
+          <li>신뢰할 수 있는 든든한 존재</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 신뢰성, 인내심, 꼼꼼함, 현실적 판단력, 일관성<br>
+        <strong>약점:</strong> 융통성 부족, 변화 거부, 감정 표현 어려움, 고집</p>
+        <h4>연애 스타일</h4>
+        <p>안정적이고 성실한 연애를 합니다. 말보다 행동으로 사랑을 표현하며, 한번 시작한 관계에 끝까지 책임집니다.</p>
+        <h4>추천 직업</h4>
+        <p>회계사, 공무원, 감사관, 군인, 품질 관리자</p>
+      </div>
       <div class="tag-row">
         <span class="tag">성실</span><span class="tag">책임감</span><span class="tag">신뢰</span>
       </div>
@@ -187,12 +342,23 @@
       <div class="card-badge">ISFJ</div>
       <h2>루피 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">수호자 — The Defender</p>
-      <ul class="traits">
-        <li>따뜻하고 다정한 보살핌</li>
-        <li>친구들을 위해 요리하고 챙김</li>
-        <li>조용하지만 헌신적</li>
-        <li>안정과 조화를 추구</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">뽀로로의 분홍 비버 루피는 수줍음이 많지만 친구들을 위해 맛있는 음식을 만들고 따뜻하게 보살피는 ISFJ 유형입니다. 조용히 뒤에서 모든 것을 챙기는 헌신적인 모습이 ISFJ의 핵심입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>따뜻하고 다정한 마음의 보살핌</li>
+          <li>친구들을 위해 정성껏 요리하고 챙김</li>
+          <li>조용하지만 누구보다 헌신적</li>
+          <li>안정과 조화로운 환경을 추구</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 헌신적 돌봄, 꼼꼼함, 인내심, 신뢰성, 관찰력<br>
+        <strong>약점:</strong> 자기 주장 부족, 변화 두려움, 과도한 희생, 거절 어려움</p>
+        <h4>연애 스타일</h4>
+        <p>상대를 위해 아낌없이 베풀고 세심하게 챙깁니다. 안정적이고 따뜻한 가정을 꿈꿉니다.</p>
+        <h4>추천 직업</h4>
+        <p>간호사, 초등교사, 사서, 영양사, 행정 전문가</p>
+      </div>
       <div class="tag-row">
         <span class="tag">다정</span><span class="tag">헌신</span><span class="tag">보살핌</span>
       </div>
@@ -203,12 +369,23 @@
       <div class="card-badge">ESTJ</div>
       <h2>프로도 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">경영자 — The Executive</p>
-      <ul class="traits">
-        <li>체계적이고 원칙을 중시</li>
-        <li>질서 정연한 환경을 만듦</li>
-        <li>책임감 있게 일을 관리</li>
-        <li>현실적이고 실용적인 판단</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈의 부잣집 강아지 프로도는 체계적이고 원칙적인 ESTJ와 어울립니다. 도시에서 온 세련된 배경과 질서 정연한 성격은 조직을 효율적으로 관리하는 ESTJ의 특성을 잘 보여줍니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>체계적이고 원칙을 철저히 중시</li>
+          <li>질서 정연한 환경을 만들어가는 관리자</li>
+          <li>책임감 있게 일을 관리하고 추진</li>
+          <li>현실적이고 실용적인 판단력</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 조직력, 실행력, 책임감, 현실적 판단, 리더십<br>
+        <strong>약점:</strong> 융통성 부족, 권위적 태도, 감정 무시, 지나친 통제</p>
+        <h4>연애 스타일</h4>
+        <p>연애에서도 계획적이고 체계적입니다. 책임감 있게 관계를 이끌며 현실적인 미래를 함께 설계합니다.</p>
+        <h4>추천 직업</h4>
+        <p>경영자, 판사, 프로젝트 매니저, 군 장교, 금융 관리자</p>
+      </div>
       <div class="tag-row">
         <span class="tag">체계적</span><span class="tag">원칙</span><span class="tag">실용적</span>
       </div>
@@ -219,12 +396,23 @@
       <div class="card-badge">ESFJ</div>
       <h2>패티 <span class="origin">(뽀로로)</span></h2>
       <p class="nickname">집정관 — The Consul</p>
-      <ul class="traits">
-        <li>사교적이고 친구를 잘 챙김</li>
-        <li>조화로운 관계를 만들어감</li>
-        <li>다른 사람의 기분에 민감</li>
-        <li>따뜻한 분위기를 만드는 사람</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">뽀로로의 활발한 여자 펭귄 패티는 친구들 사이에서 분위기를 이끌고 모두를 챙기는 ESFJ 유형입니다. 사교적이고 타인의 감정에 민감하게 반응하며, 따뜻한 분위기를 만들어가는 사람입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>사교적이고 친구를 세심하게 챙김</li>
+          <li>조화로운 관계를 적극적으로 만들어감</li>
+          <li>다른 사람의 기분에 민감하게 반응</li>
+          <li>따뜻한 분위기를 만드는 분위기 메이커</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 사교성, 배려심, 조직력, 협동심, 책임감<br>
+        <strong>약점:</strong> 타인 시선 의식, 갈등 회피, 지나친 간섭, 변화 두려움</p>
+        <h4>연애 스타일</h4>
+        <p>연인에게 세심한 배려를 아끼지 않으며 기념일을 중요시합니다. 안정적이고 따뜻한 관계를 지향합니다.</p>
+        <h4>추천 직업</h4>
+        <p>간호사, 이벤트 플래너, 호텔리어, 교사, 고객 서비스 매니저</p>
+      </div>
       <div class="tag-row">
         <span class="tag">사교적</span><span class="tag">조화</span><span class="tag">따뜻함</span>
       </div>
@@ -247,12 +435,23 @@
       <div class="card-badge">ISTP</div>
       <h2>둘리 <span class="origin">(아기공룡 둘리)</span></h2>
       <p class="nickname">장인 — The Virtuoso</p>
-      <ul class="traits">
-        <li>독립적이고 자유로운 성격</li>
-        <li>상황 대처 능력이 뛰어남</li>
-        <li>호기심으로 이것저것 시도</li>
-        <li>쿨하고 감정에 휘둘리지 않음</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">대한민국 국민 캐릭터 둘리는 빙하기에서 온 아기공룡으로 어떤 상황에서도 자기만의 방식으로 살아가는 ISTP입니다. 초능력을 자유자재로 활용하는 모습처럼, ISTP는 도구와 기술을 능숙하게 다루는 장인형 성격입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>독립적이고 자유로운 성격의 소유자</li>
+          <li>상황 대처 능력이 뛰어난 문제 해결사</li>
+          <li>호기심으로 이것저것 직접 시도해봄</li>
+          <li>쿨하고 감정에 휘둘리지 않는 냉철함</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 위기 대처 능력, 실용적 기술력, 관찰력, 적응력<br>
+        <strong>약점:</strong> 감정 표현 서툼, 장기 계획 부족, 무관심해 보임, 약속 가벼움</p>
+        <h4>연애 스타일</h4>
+        <p>자유로운 연애를 선호하며 속박을 싫어합니다. 말보다 행동으로 표현하고, 함께 활동적인 데이트를 즐깁니다.</p>
+        <h4>추천 직업</h4>
+        <p>엔지니어, 파일럿, 정비사, 셰프, 소방관</p>
+      </div>
       <div class="tag-row">
         <span class="tag">독립적</span><span class="tag">쿨함</span><span class="tag">적응력</span>
       </div>
@@ -263,12 +462,23 @@
       <div class="card-badge">ISFP</div>
       <h2>샐리 <span class="origin">(라인프렌즈)</span></h2>
       <p class="nickname">모험가 — The Adventurer</p>
-      <ul class="traits">
-        <li>겉은 순수하지만 내면이 강함</li>
-        <li>자기만의 감성과 취향이 확실</li>
-        <li>예술적 감각이 뛰어남</li>
-        <li>조용히 자기 길을 걸어감</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">라인프렌즈의 작은 병아리 샐리는 겉보기에 순수하고 귀엽지만 내면에 강한 의지와 독특한 감성을 가진 ISFP입니다. 작은 체구에서 뿜어나오는 강렬한 에너지처럼, ISFP는 조용하지만 자기만의 세계가 확고합니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>겉은 순수하지만 내면이 단단하고 강함</li>
+          <li>자기만의 감성과 취향이 확실함</li>
+          <li>예술적 감각이 뛰어나고 미적 기준이 높음</li>
+          <li>조용히 자기 길을 묵묵히 걸어감</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 예술적 감각, 감수성, 적응력, 현재에 충실, 온화함<br>
+        <strong>약점:</strong> 계획성 부족, 갈등 회피, 감정 기복, 자기 주장 약함</p>
+        <h4>연애 스타일</h4>
+        <p>감성적이고 로맨틱한 연애를 합니다. 작은 선물과 따뜻한 행동으로 사랑을 표현하며 상대의 감정에 섬세하게 반응합니다.</p>
+        <h4>추천 직업</h4>
+        <p>일러스트레이터, 플로리스트, 사진작가, 패션 디자이너, 수의사</p>
+      </div>
       <div class="tag-row">
         <span class="tag">감성</span><span class="tag">예술적</span><span class="tag">순수</span>
       </div>
@@ -279,12 +489,23 @@
       <div class="card-badge">ESTP</div>
       <h2>튜브 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">사업가 — The Entrepreneur</p>
-      <ul class="traits">
-        <li>겁이 많지만 용감하게 도전</li>
-        <li>순간의 즐거움을 추구</li>
-        <li>행동이 빠르고 실행력 강함</li>
-        <li>현실 감각이 뛰어남</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈의 오리 튜브는 겁이 많지만 결정적 순간에 용감하게 행동하는 ESTP입니다. 오리 탈을 쓴 진짜 정체가 따로 있다는 설정처럼, ESTP는 상황에 따라 다양한 모습을 보여주는 적응력의 달인입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>겁이 많지만 결정적 순간에 용감하게 도전</li>
+          <li>순간의 즐거움과 스릴을 추구</li>
+          <li>행동이 빠르고 실행력이 강함</li>
+          <li>현실 감각이 뛰어나고 실용적</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 순발력, 현실 감각, 사교성, 관찰력, 실행력<br>
+        <strong>약점:</strong> 인내심 부족, 장기 계획 어려움, 충동적, 감정 무시</p>
+        <h4>연애 스타일</h4>
+        <p>활동적이고 즉흥적인 데이트를 좋아합니다. 지루한 것을 싫어하며 연인과 함께하는 모험을 즐깁니다.</p>
+        <h4>추천 직업</h4>
+        <p>영업 전문가, 운동선수, 경찰관, 부동산 중개사, 응급 구조사</p>
+      </div>
       <div class="tag-row">
         <span class="tag">도전</span><span class="tag">실행력</span><span class="tag">현실적</span>
       </div>
@@ -295,18 +516,66 @@
       <div class="card-badge">ESFP</div>
       <h2>무지 <span class="origin">(카카오프렌즈)</span></h2>
       <p class="nickname">연예인 — The Entertainer</p>
-      <ul class="traits">
-        <li>분위기 메이커이자 인싸</li>
-        <li>즐거운 것을 찾아 다님</li>
-        <li>표현력이 풍부하고 유쾌함</li>
-        <li>사람들과 함께하는 걸 좋아함</li>
-      </ul>
+      <div class="card-body">
+        <p class="card-intro">카카오프렌즈의 무지는 토끼옷을 입은 단무지로 정체를 숨기고 있지만, 그 유쾌하고 밝은 성격은 숨길 수 없습니다. 어디서든 분위기를 띄우고 사람들을 웃게 만드는 ESFP의 대표 캐릭터입니다.</p>
+        <h4>핵심 성격 특징</h4>
+        <ul class="traits">
+          <li>타고난 분위기 메이커이자 인싸 중의 인싸</li>
+          <li>즐거운 것을 찾아 어디든 달려감</li>
+          <li>표현력이 풍부하고 유쾌한 에너지</li>
+          <li>사람들과 함께하는 것이 가장 큰 행복</li>
+        </ul>
+        <h4>강점과 약점</h4>
+        <p><strong>강점:</strong> 사교성, 낙관적 에너지, 적응력, 표현력, 관대함<br>
+        <strong>약점:</strong> 집중력 부족, 장기 계획 어려움, 갈등 회피, 충동적 소비</p>
+        <h4>연애 스타일</h4>
+        <p>연애를 가장 즐기는 유형으로 서프라이즈를 좋아합니다. 함께 웃고 즐길 수 있는 밝은 관계를 추구합니다.</p>
+        <h4>추천 직업</h4>
+        <p>연예인, 이벤트 MC, 여행 가이드, 유치원 교사, 인플루언서</p>
+      </div>
       <div class="tag-row">
         <span class="tag">유쾌</span><span class="tag">인싸</span><span class="tag">표현력</span>
       </div>
     </article>
 
   </main>
+
+  <!-- ===== MBTI 유형 비교표 ===== -->
+  <section class="comparison-section" id="comparison">
+    <h2 class="section-title">MBTI 16가지 유형 한눈에 비교</h2>
+    <p class="section-desc">각 유형의 캐릭터, 핵심 키워드, 그룹을 한눈에 비교해 보세요.</p>
+    <div class="table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>유형</th>
+            <th>캐릭터</th>
+            <th>별명</th>
+            <th>핵심 키워드</th>
+            <th>그룹</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>INTJ</td><td>🦁 라이언</td><td>전략가</td><td>독립적, 전략적, 완벽주의</td><td>분석가</td></tr>
+          <tr><td>INTP</td><td>🦊 에디</td><td>논리술사</td><td>호기심, 논리적, 발명가</td><td>분석가</td></tr>
+          <tr><td>ENTJ</td><td>😎 네오</td><td>통솔자</td><td>카리스마, 리더십, 추진력</td><td>분석가</td></tr>
+          <tr><td>ENTP</td><td>🐊 크롱</td><td>변론가</td><td>창의적, 도전적, 재치</td><td>분석가</td></tr>
+          <tr><td>INFJ</td><td>🐻 브라운</td><td>옹호자</td><td>신념, 공감, 이상주의</td><td>외교관</td></tr>
+          <tr><td>INFP</td><td>🐰 코니</td><td>중재자</td><td>감성, 로맨틱, 상상력</td><td>외교관</td></tr>
+          <tr><td>ENFJ</td><td>🐧 뽀로로</td><td>선도자</td><td>리더, 열정, 배려</td><td>외교관</td></tr>
+          <tr><td>ENFP</td><td>🍑 어피치</td><td>활동가</td><td>에너지, 자유, 긍정</td><td>외교관</td></tr>
+          <tr><td>ISTJ</td><td>🐻‍❄️ 포비</td><td>현실주의자</td><td>성실, 책임감, 신뢰</td><td>관리자</td></tr>
+          <tr><td>ISFJ</td><td>🦫 루피</td><td>수호자</td><td>헌신, 보살핌, 다정</td><td>관리자</td></tr>
+          <tr><td>ESTJ</td><td>🐶 프로도</td><td>경영자</td><td>체계적, 원칙, 실행력</td><td>관리자</td></tr>
+          <tr><td>ESFJ</td><td>🐧 패티</td><td>집정관</td><td>사교적, 조화, 배려</td><td>관리자</td></tr>
+          <tr><td>ISTP</td><td>🐉 둘리</td><td>장인</td><td>독립적, 쿨함, 적응력</td><td>탐험가</td></tr>
+          <tr><td>ISFP</td><td>🐥 샐리</td><td>모험가</td><td>예술적, 감성, 순수</td><td>탐험가</td></tr>
+          <tr><td>ESTP</td><td>🦖 튜브</td><td>사업가</td><td>도전, 실행력, 현실적</td><td>탐험가</td></tr>
+          <tr><td>ESFP</td><td>🐰 무지</td><td>연예인</td><td>유쾌, 표현력, 인싸</td><td>탐험가</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <!-- Ad: before contact form -->
   <div class="ad-slot ad-slot-wide">
@@ -319,6 +588,7 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
+  <!-- ===== Contact Section ===== -->
   <section class="contact-section" id="contact">
     <h2 class="contact-title">제휴문의</h2>
     <p class="contact-desc">제휴 및 협업에 관심이 있으시면 아래 양식을 통해 문의해 주세요.</p>
@@ -344,7 +614,15 @@
   </section>
 
   <footer>
-    <p>MBTI × 한국 캐릭터 — 성격 유형별 캐릭터 매칭</p>
+    <div class="footer-links">
+      <a href="privacy.html">개인정보처리방침</a>
+      <span>|</span>
+      <a href="#about">사이트 소개</a>
+      <span>|</span>
+      <a href="#contact">제휴문의</a>
+    </div>
+    <p>© 2026 MBTI × 한국 캐릭터. 본 사이트의 콘텐츠는 교육 및 엔터테인먼트 목적으로 제작되었습니다.</p>
+    <p class="footer-disclaimer">MBTI는 Myers-Briggs Type Indicator의 약자이며, 각 캐릭터의 저작권은 해당 원작자에게 있습니다.</p>
   </footer>
 
   <script defer type="text/javascript" src="/main.js"></script>
